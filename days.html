@@ -57,7 +57,7 @@ margin:50px auto;}
 <body>
 <h2>   ايام الاسبوع وشهور السنه</h2>
  <div class="day">   
-<img onclick="speak('شهور السنة 12 يناير فبراير مارس  ابريل  مايو يونيو اغسطس ستمبر اكتوبر نوفمبر ديسمبر ' ,'ar'              )" src="moths.jpg" alt="" >
+<img onclick="speak('شهور السنة اثٍناعشرةً يناير فبراير مارس  ابريل  مايو يونيو اغسطس ستمبر اكتوبر نوفمبر ديسمبر ' ,'ar'              )" src="moths.jpg" alt="" >
 <img  onclick=" speak ( '  ايام الاسبوع سبعة  السبت  الاحد الاثنين الثلاثاء الاربعاء الخميس الجمعه','ar')"src="days.jpg" alt="">
 </div>
 
@@ -71,7 +71,7 @@ function speak( text,lang)
 {window.speechSynthesis.cancel();
   let utterance =new SpeechSynthesisUtterance(text);
 utterance.lang='ar-EG';
-utterance.rate=0.7;
+utterance.rate=0.9;
 utterance.pitch=1.8;
 window.speechSynthesis.speak(utterance);
 };
