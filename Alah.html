@@ -67,7 +67,7 @@ margin:50px auto;}
 
  <div class="den">
 <img onclick="speak('مَنْ رَبِّيَرَبِّيَ اللهُ مَا دِينُي دِينِيَ الإِسْلَامُ مَنْ نَبِيُّكَ نَبِيِّي مُحَمَّدٌ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ   مَا كِتَابُكَ كِتَابِيَ الْقُرْآنُ','ar')" src="دين.jpg" alt="">
-<img onclick=" speak ( '    الصلاوات الخمس هما   صلاة الفجر   صلاة الظهر   صلاة العصر  صلاة المغرب    صلاة العشاء   ','ar')" src="pry2.jpg" alt="">
+<img onclick=" speak ( 'الصلاوات الخمس هما   صلاة الفجر   صلاة الظهر   صلاة العصر  صلاة المغرب    صلاة العشاء   ','ar')" src="pry2.jpg" alt="">
 <img  onclick="speak(  ' الصلوات الخمسة   الفجر ركعتان والظهر اربعة ركعات والعصر اربعة ركعات والمغرب ثلاثة ركعات والعشاء اربعة ركعات' ,'ar ')" src="pry1.jpg" alt="">
 </div>
 
@@ -85,7 +85,7 @@ function speak( text,lang)
   let utterance =new SpeechSynthesisUtterance(text);
 utterance.lang='ar-EG';
 utterance.rate=0.9;
-utterance.pitch=1.8;
+utterance.pitch=1.2;
 window.speechSynthesis.speak(utterance);
 };
 
