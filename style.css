@@ -10,7 +10,7 @@ flex-direction: column;
 gap: 30px;
 min-width:600px;
 min-height: fit-content;
-margin: auto;
+margin: 20px auto;
 justify-content: center;}
 h2{
  font-size:40px;
