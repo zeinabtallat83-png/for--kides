@@ -7,7 +7,8 @@
 <style>
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column؛
+flexwarp:warp;
 background: linear-gradient(#e280c5,#999,#e07e45);}
 
 .abgd { display: flex; 
@@ -288,7 +289,7 @@ function speak( text,lang)
 {window.speechSynthesis.cancel();
   let utterance =new SpeechSynthesisUtterance(text);
 utterance.lang='en-EG',
-utterance.rate=0.5;
+utterance.rate=0.8;
 utterance.pitch=1.8;
 window.speechSynthesis.speak(utterance);
 };
