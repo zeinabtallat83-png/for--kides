@@ -40,12 +40,13 @@ justify-content: center;};
     margin: auto;};
 
 .home button {
-height: 50px;
-width: 100px;
+   height: 100px;
+width: 150px;
 background-color: rgb(77, 157, 182);
 color: red;
 border-radius: 20%;
 margin:40px  auto;};
+
 h2{
  font-size: larger;
 color: red;
@@ -90,8 +91,8 @@ margin:50px auto;};
 
 function speak( text,lang)
 {window.speechSynthesis.cancel();
-  let utterance =new SpeechSynthesisUtterance(text);
-utterance.lang='ar-EG',
+  let utterance =new; SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG';
 utterance.rate=0.9;
 utterance.pitch=1.2;
 window.speechSynthesis.speak(utterance);
