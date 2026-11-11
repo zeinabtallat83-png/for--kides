@@ -283,12 +283,12 @@ function speak( text,lang)
 {window.speechSynthesis.cancel();
   let utterance =new SpeechSynthesisUtterance(text);
   if (lang==='ar'){
-utterance.lang='ar-EG',
+utterance.lang='ar-EG';
 utterance.rate=0.8;}
 else { utterance.lang ='en-US';
 utterance.rate=0.8;
  };
-utterance.pitch=1;
+utterance.pitch=1.2;
 window.speechSynthesis.speak(utterance);
 };
 </script>       
