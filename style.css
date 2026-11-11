@@ -2,7 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
-background: linear-gradient(#fd1d1d,#833ab4,#646464,#999,#fd1d1d,#646464);}
+background: linear-gradient(#833ab4,#999,#fd1d1d,#646464);}
 .write {
 display:flex;
 flex-wrap: wrap;
