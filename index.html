@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For-Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="write">
+  <h2> تعلم</h2>
+
+  <div class="num">
+
+<div class="abc">
+<a href="abgady.html"  > <img src="a-a.png" alt=""></a>
+<p  onclick="speak(  'الحروف   العربيه' ,'ar')" style="cursor: pointer; " >الحروف  العربيه</p>
+  </div>
+
+<div class="animal">
+<a href="animals.html"  > <img src="anmals.png" alt=""></a>
+<p  onclick="speak(  'الحيوانات   ' ,'ar')" style="cursor: pointer; " >  الحيوانات</p>
+  </div>
+
+<div class="job">
+<a href="job.html"  > <img src="m.carpentar.jpg" alt=""></a>
+<p  onclick="speak(  '  المهن ' ,'ar')" style="cursor: pointer; " >المهن  </p>
+  </div>
+
+<div class="num1">
+<a href="num.html"> <img src="num.jpg" alt=""></a>
+<p onclick ="speak(  'الارقام   ' ,'ar')"  style="cursor: pointer;">  الارقام</p>
+  </div>
+
+<div class="num2">
+<a href="abcd.html"> <img src="abcdef.jpg" alt=""></a>
+<p onclick="speak(  'الحروف   الانجليزيه' ,'ar')"style="cursor: pointer;"  >الحروف  الانجليزيه </p>
+  </div>
+
+<div class="coler">
+<a href="coler.html"> <img src=" " alt=""></a>
+<p onclick="speak(  'الالوان  ' ,'ar')" style="cursor: pointer;" > الالوان</p>
+  </div>
+
+<div class="hass">
+<a href="hawas.html"> <img src="hasss.jpg" alt=""></a>
+<p onclick="speak(  'الحواس الخمسه   ' ,'ar')"style="cursor: pointer;"  >الحواس  الخمسه </p>
+  </div>
+
+<div class="ashkal">
+<a href="ashkal.html"> <img src="star.jpg" alt=""></a>
+<p onclick="speak(  'الاشكال الهندسيه   ' ,'ar')" style="cursor: pointer;" >الاشكال  الهندسيه</p>
+</div>
+
+<div class="allh">
+  <a href="Alah.html"> <img src="دين.jpg" alt=""></a>
+<p onclick="speak( 'عقيدتي الجميلة','ar')" style="cursor: pointer;">عقيدتي الجميلة</p>  
+</div>
+
+
+<div class="days">
+  <a href="days.html"> <img src="days.jpg" alt=""></a>
+<p onclick="speak( 'الايام والشهور ','ar')" style="cursor: pointer;"> الايام والشهور</p>  
+</div>
+
+</div>
+</section>
+
+<script>
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.6;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+</script>
+</body>
+</html>

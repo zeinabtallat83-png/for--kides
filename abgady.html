@@ -1,0 +1,298 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحروف-العربيه</title>
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+background: linear-gradient(rgb(233, 241, 237),#a71565,#fd1d1d);}
+
+ .abgd { display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+     gap: 15px; 
+    justify-content: center; 
+    padding: 20px; 
+margin: auto;}
+.dg {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin:5px  auto;
+}    
+.abgb-box 
+  { text-align: center; 
+    border: 2px solid #861adf; 
+    border-radius: 15px;
+     width:37px; 
+     padding:2px ;
+    margin: auto;
+    height:20px;
+}
+.abgb-box button 
+{ width:35px; 
+background: #f0c5e3;
+ color: #861adf;
+ border: none; 
+ text-align:center;
+ border-radius: 10px;
+ margin: auto;
+  font-size: 18px; 
+  cursor: pointer; }
+
+  #main-display { text-align: center;
+     margin: 20px auto; }
+  #main-display img { width: 250px;
+   display: none;
+   margin: auto; } 
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: #861adf;
+color: white;
+border-radius: 20%;
+margin: auto;}
+h2{
+ font-size: larger;
+color: white;
+background-color:#861adf;
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+text-align: center;
+margin: auto;}
+
+.ved {
+min-height: auto;
+width: 70%;
+margin: auto;
+}
+.ved video{
+  min-height: auto;
+  width: 100%;
+  margin:50px auto;
+}
+</style>
+</head>
+<body>
+<h2> تعلم الحروف العربيه  </h2>
+<section class="abgd">
+<div class="dg"> 
+ <div class="abgb-box">
+    <button onclick="[showInfo('a'),speak( ' الف اسد','ar')]">(ا)</button>
+    <img id="img-a " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('b'),speak('باء بطة','ar')]">(ب)</button>
+    <img id="img-b " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('c'),speak('تاء تمساح','ar')]">(ت)</button>
+    <img id="img-c " src="">
+  </div>
+<div class="abgb-box">
+    <button onclick="[showInfo('d'),speak(' ثاء ثعلب','ar')]">(ث)</button>
+    <img id="img-d" src="">
+  </div>
+<div class="abgb-box">
+    <button onclick="[showInfo('e'),speak(' جيم جزر','ar')]">(ج)</button>
+    <img id="img-e " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('f'),speak(' حاء حصان','ar')]">(ح)</button>
+    <img id="img-f" src="">
+  </div> 
+
+<div class="abgb-box">
+    <button onclick="[showInfo('g'),speak('خاء خروف','ar')]">(خ)</button>
+    <img id="img-g " src="">
+  </div>
+</div>
+
+<div class="dg"> 
+<div class="abgb-box">
+    <button onclick="[showInfo('h'),speak( ' دال دجاجه','ar')]">(د)</button>
+    <img id="img-h " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('i'),speak('ذال ذئب','ar')]">(ذ)</button>
+    <img id="img-i " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('j'),speak('راء رمان','ar')]">(ر)</button>
+    <img id="img-j " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('k'),speak( ' زاء زرافة','ar')]">(ز)</button>
+    <img id="img-k" src="">
+  </div>
+<div class="abgb-box">
+    <button onclick="[showInfo('l'),speak('سين سمكة','ar')]">(س)</button>
+    <img id="img-l " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('m'), speak('شين شجره','ar')]">(ش)</button>
+    <img id="img-m " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('n'), speak('صاض صقر','ar')]">(ص)</button>
+    <img id="img-n " src="">
+  </div>
+  </div>
+
+<div class="dg"> 
+<div class="abgb-box">
+    <button onclick="[showInfo('o'), speak(' ضاض ضفدع','ar')]">(ض)</button>
+    <img id="img-0" src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('p'), speak( ' طاء طاووس', 'ar')]">(ط)</button>
+    <img id="img-p" src="">
+  </div>
+<div class="abgb-box">
+    <button onclick="[showInfo('q'),speak('ظاء ظبي','ar')]">(ظ)</button>
+    <img id="img-q " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('r'), speak('عين عنب' ,'ar')]">(ع)</button>
+    <img id="img-r" src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('s'), speak('غين غراب','ar')]">(غ)</button>
+    <img id="img-s" src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('t'), speak('فاء فراشة' ,'ar')]">(ف)</button>
+    <img id="img-t " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('u'),speak('قاف قرد','ar') ]">(ق)</button>
+    <img id="img-u " src="">
+  </div>
+</div>
+
+<div class="dg">
+<div class="abgb-box">
+    <button onclick="[showInfo('v'), speak('كاف كلب','ar')]">(ك)</button>
+    <img id="img-v" src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('w'), speak('لام ليمون','ar')]">(ل)</button>
+    <img id="img-w" src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('x'), speak('ميم موز','ar')]">(م)</button>
+    <img id="img-x " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('y'),speak('نون نمر','ar')] ">(ن)</button>
+    <img id="img-y " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('z') , speak('هاء هدهد','ar')]">(ه)</button>
+    <img id="img-z " src="">
+  </div>
+  <div class="abgb-box">
+    <button onclick="[showInfo('aa'),speak( ' واو وطواط','ar') ]">(و)</button>
+    <img id="img-aa " src="">
+  </div>
+
+<div class="abgb-box">
+    <button onclick="[showInfo('ab'), speak(' ياء يمامة','ar')] ">(ي)</button>
+    <img id="img-ab" src="">
+  </div>
+</div>
+
+<div id="main-display">
+  <img id="big-img" src="" alt="">
+</div> 
+</section>
+
+<div class="ved">
+  <video  controls autoplay muted> 
+    <source src="abgadya.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<a href="index.html" class="home"><button>home</button></a>
+
+
+<script>
+let ABGD = {
+  a: "a-a.png"  ,
+   b: "a-b.png"  ,
+  c: "a-te.png"  ,
+  d: "a-tha.png"  ,
+  e: "a-g.png"  ,
+f: "a-hh.png"  ,
+   g: "a-kh.png"  ,
+  h: "a-d.png"  ,
+  i: "a-za.png"  ,
+  j: "a-r.png"  ,
+ k: "a-z.png"  ,
+   l: "a-s.png"  ,
+  m: "a-sh.png"  ,
+  n: "a-thth.png"  ,
+  o: "a-da.png"  ,
+p: "a-t.png"  ,
+   q: "a-th.png"  ,
+  r: "a-aa.png"  ,
+  s: "a-gh.png"  ,
+  t: "a-f.png"  ,
+ u: "a-ka.png"  ,
+   v: "a-k.png"  ,
+  w: "a-l.png"  ,
+  x: "a-m.png"  ,
+  y: "a-n.png"  ,
+z: "a-h.png"  ,
+ aa: "a-w.png" ,
+  ab: "a-ya.png"  ,
+};
+
+function showInfo(field) {
+
+//   // الطريقة 2: لو عايزة كل الصور تظهر في الديف الكبير اللي فوق، شيلي // من السطرين دول
+let bigImg = document.getElementById("big-img");
+bigImg.src = ABGD[field];
+bigImg.style.display = "block";};
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.5;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+
+</script>     
+</body>
+</html> 

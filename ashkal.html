@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ashkal-Handasyy</title>
+    <style>
+body {
+    display: flex;
+    flex-direction: column;
+background: linear-gradient(#cf8bc0);}
+
+h2{
+ font-size: larger;
+color: wheat;
+background-color: rgb(122, 29, 165);
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+margin: auto;}
+
+.num {
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap; 
+margin:20px auto;
+justify-content: center; }
+
+* .numb1 img ,.numb2 img ,.numb3 img ,.numb4 img ,.numb5 img ,.numb6 img,.numb7 img ,.numb8 img ,.numb9 img,.numb10 img 
+ {
+    min-height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    border: 2px solid orangered;
+    border-radius: 20%;
+    transition: all 0.4s ease;
+ cursor: pointer;} 
+
+.numb1 img:hover ,.numb2 img:hover ,.numb3 img:hover ,.numb4 img:hover ,.numb5 img:hover ,.numb6 img:hover ,.numb7 img:hover ,.numb8 img:hover ,.numb9 img:hover,.numb10 img:hover 
+{   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px orangered;
+     z-index: 10;} 
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: rgb(122, 29, 165);
+color: wheat;
+border-radius: 20%;
+margin:50px auto;}
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;"> الاشكال الهندسيه</h2>
+
+ <div class="num">
+<div class="numb1">
+<img onclick="speak('مثلث','ar')" src="tra1.jpg" alt="">
+  </div>
+
+<div class=" numb2">
+<img onclick="speak('دائره','ar')" src="dr1.jpg" alt="">
+  </div>
+
+<div class="numb3">
+<img onclick="speak('مستطيل','ar')" src="mos1.jpg" alt="">
+  </div>
+
+<div class="numb4">
+ <img onclick="speak('مربع','ar')" src="qur1.jpg" alt="">
+  </div>
+
+<div class="numb5">
+ <img onclick="speak('قلب','ar')" src="kl1.jpg" alt="">
+  </div>
+
+</div> 
+    
+<a href="index.html" class="home"><button>home</button></a>
+
+<script>
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.9;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+</script>
+</body>
+</html>

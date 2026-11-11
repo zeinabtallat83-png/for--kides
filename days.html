@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>days-months</title>
+    <style>
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+background: linear-gradient(#74d9eb ,#cac251);
+margin:40px auto;
+align-items: center;
+justify-content:center;}
+.day{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin:20px auto;
+align-items: center;
+}
+img{ height: 300px;
+   min-width:65%;
+    margin:20px auto;
+    border-radius: 20px;
+}
+img:hover{
+ transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px orangered;
+     z-index: 10;} 
+
+h2{
+ font-size: larger;
+color: wheat;
+background-color: rgb(135, 88, 247);
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+margin: auto;}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: rgb(135, 88, 247);
+color: wheat;
+border-radius: 20%;
+margin:50px auto;}
+    </style>
+</head>
+<body>
+<h2>   ايام الاسبوع وشهور السنه</h2>
+ <div class="day">   
+<img onclick="speak('شهور السنة 12 يناير فبراير مارس  ابريل  مايو يونيو اغسطس ستمبر اكتوبر نوفمبر ديسمبر ' ,'ar'              )" src="moths.jpg" alt="" >
+<img  onclick=" speak ( '  ايام الاسبوع سبعة  السبت  الاحد الاثنين الثلاثاء الاربعاء الخميس الجمعه','ar')"src="days.jpg" alt="">
+</div>
+
+
+<a href="index.html" class="home"><button>home</button></a>
+
+
+<script>
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG';
+utterance.rate=0.7;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+
+</script>
+</body>
+</html>

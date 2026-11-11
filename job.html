@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <style>
+body
+{  display: flex;
+ flex-direction: column;
+ background: linear-gradient(#e6d06f,#e9e4ec,#646464);
+ flex-wrap: wrap; 
+  margin:0; 
+  padding: 0; 
+  overflow-x:hidden; 
+  font-family: sans-serif;  
+ }
+h2{
+ font-size: larger;
+color: white;
+background-color:#861adf;
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+text-align: center;
+margin: auto;}
+.jobs{  
+display: flex;
+ flex-direction:column;
+ flex-wrap: wrap;
+ width:95%;
+margin:auto;
+}
+ div{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin:20px  auto;
+width:auto;
+align-items: center;
+}
+img {
+width:250px;
+height:350px;
+margin:10px auto;
+ border: 2px solid gold;
+border-radius: 30px;
+ }
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: #861adf;
+color: white;
+border-radius: 20%;
+margin: auto;}
+
+</style>
+</head>
+<body>
+    <h2> تعلم المهن  </h2>
+
+<section class="Jobs">
+<div>
+<img onclick="speak( 'رجل بناء','ar ')" src="m.bulder.jpg" alt="">
+<img onclick="speak( 'مهندس كمبيوتر ',' ar')" src="m.busnesman.jpg" alt="">
+<img onclick="speak( 'نجار','ar ')" src="m.carpentar.jpg" alt="">
+<img onclick="speak( 'طباخ',' ar')" src="m.cooker.jpg" alt="">
+<img onclick="speak( 'حلاق','ar ')" src="m.cuter.jpg" alt="">
+</div>
+<div>
+<img onclick="speak( 'طبيبة','ar ')" src="m.doctor.jpg" alt="">
+<img onclick="speak( 'طبيب بيطري','ar ')" src="m.doctoran.jpg" alt="">
+<img onclick="speak( 'رسام',' ar')" src="m.drawner.jpg" alt="">
+<img onclick="speak( 'سائق اجرة','ar ')" src="m.drivr.jpg" alt="">
+<img onclick="speak( 'مزارع','ar ')" src="m.farmer.jpg" alt="">
+</div>
+<div>
+<img onclick="speak( 'رجل مطافي','ar ')" src="m.fireman.jpg" alt="">
+<img onclick="speak( 'لاعب كرة ',' ar')" src="m.football.jpg" alt="">
+<img onclick="speak( 'عازف','ar ')" src="m.musc.jpg" alt="">
+<img onclick="speak( 'ممرضة','ar ')" src="m.nurs.jpg" alt="">
+<img onclick="speak( 'رجل امن',' ar')" src="m.polic.jpg" alt="">
+</div>
+<div>
+<img onclick="speak( 'جندي','ar ')" src="m.solder.jpg" alt="">
+<img onclick="speak( 'طبيبة عيون','ar ')" src="m.teacher.jpg" alt="">
+<img onclick="speak( 'رجل مرور',' ar')" src="m.traffc.jpg" alt="">
+<img onclick="speak( 'مدرس','ar-EG')" src="m.teacher2.jpg" alt="">
+</div>
+</section>
+<a href="index.html" class="home"><button>home</button></a>
+<script>
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.5;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+</script>
+</body>
+</html>

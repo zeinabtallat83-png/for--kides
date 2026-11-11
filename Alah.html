@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Alah-Raby</title>
+    <style>
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+background: linear-gradient(#09b32e ,#b0ebb3);
+margin:40px auto;
+align-items: center;
+justify-content:center;}
+.den{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin:20px auto;
+align-items: center;
+}
+img{ height: 300px;
+   min-width:55%;
+    margin:20px auto;
+    border-radius: 20px;
+}
+img:hover{
+ transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px orangered;
+     z-index: 10;} 
+
+
+video{
+width: 80%;
+height: 300px;
+margin:50px auto;
+
+}
+h2{
+ font-size: larger;
+color: wheat;
+background-color:brown;
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+margin: auto;}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: brown;
+color: wheat;
+border-radius: 20%;
+margin:50px auto;}
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;"> عقيدتي الجميلة </h2>
+
+ <div class="den">
+<img onclick="speak('مَنْ رَبِّيَرَبِّيَ اللهُ مَا دِينُي دِينِيَ الإِسْلَامُ مَنْ نَبِيُّكَ نَبِيِّي مُحَمَّدٌ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ   مَا كِتَابُكَ كِتَابِيَ الْقُرْآنُ','ar')" src="دين.jpg" alt="">
+<img onclick=" speak ( '    الصلاوات الخمس هما   صلاة الفجر   صلاة الظهر   صلاة العصر  صلاة المغرب    صلاة العشاء   ','ar')" src="pry2.jpg" alt="">
+<img  onclick="speak(  ' الصلوات الخمسة   الفجر ركعتان والظهر اربعة ركعات والعصر اربعة ركعات والمغرب ثلاثة ركعات والعشاء اربعة ركعات' ,'ar ')" src="pry1.jpg" alt="">
+</div>
+
+<video controls autoplay muted> 
+    <source src="الله-ربي.mp4 " type="video/mp4"> 
+     </video>
+
+    
+<a href="index.html" class="home"><button>home</button></a>
+
+<script>
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG';
+utterance.rate=0.7;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+
+</script>
+</body>
+</html>
+
+
+

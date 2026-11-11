@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <style>
+body
+{  display: flex;
+ flex-direction: column;
+ flex-wrap: wrap; 
+ background: linear-gradient(#fce3e3,#70afda,#646464,#fd1d1d);
+  margin:0; 
+  padding: 0; 
+  overflow-x:hidden; 
+  font-family: sans-serif;   }
+h2{
+ font-size: larger;
+color: white;
+background-color:#861adf;
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+text-align: center;
+margin: auto;}
+.anml{  
+display: flex;
+ flex-direction:column;
+ flex-wrap: wrap;
+ width:95%;
+margin:auto;
+}
+ div{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin:20px  auto;
+width:auto;
+align-items: center;
+}
+img {
+width:250px;
+height:350px;
+margin:10px auto;
+ border: 2px solid gold;
+border-radius: 30px;
+ }
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: #861adf;
+color: white;
+border-radius: 20%;
+margin: auto;}
+
+</style>
+</head>
+<body>
+    <h2> تعلم اسماء الحيوانات  </h2>
+
+<section class="anml">
+<div>
+
+<img onclick="speak( 'دب الباندا','ar ')" src="l-banda.jpg" alt="">
+<img onclick="speak(  'دب بري',' ar')" src="l-bear.jpg" alt="">
+<img onclick="speak( 'قطة','ar ')" src="l-cat.jpg" alt="">
+<img onclick="speak( 'بقرة','ar ')" src="l-cow.jpg" alt="">
+<img onclick="speak( 'كلب',' ar')" src="l-dog.jpg" alt="">
+<img onclick="speak( 'حمار','ar ')" src="l-donky.jpg" alt="">
+</div>
+<div>
+<img onclick="speak( 'جمل','ar ')" src="l-gml.jpg" alt="">
+<img onclick="speak( 'بطة','ar ')" src="l-duke.jpg" alt="">
+<img onclick="speak( 'فيل ','ar ')" src="l-eleph.jpg" alt="">
+<img onclick="speak( 'فهد',' ar')" src="l-fhd.jpg" alt="">
+<img onclick="speak( 'غزالة ','ar ')" src="l-gazl.jpg" alt="">
+<img onclick="speak( 'زرافة','ar ')" src="l-giraf.jpg" alt="">
+</div>
+<div>
+<img onclick="speak( 'ماعز ','ar ')" src="l-goat.jpg" alt="">
+<img onclick="speak( '  خروف',' ar')" src="l-got.jpg" alt="">
+<img onclick="speak( 'وحيد القرن','ar ')" src="l-karn.jpg" alt="">
+<img onclick="speak( 'خنزير','ar ')" src="l-kha.jpg" alt="">
+<img onclick="speak( 'كنغر ',' ar')" src="l-kongr.jpg" alt="">
+<img onclick="speak( 'اسد','ar ')" src="l-lion.jpg" alt="">
+
+</div>
+<div>
+<img onclick="speak( 'نمر','ar ')" src="l-namer.jpg" alt="">
+<img onclick="speak( 'ثور ','ar ')" src="l-ox.jpg" alt="">
+<img onclick="speak( 'ارنب ',' ar')" src="l-rabbt.jpg" alt="">
+<img onclick="speak( 'ثعبان','ar-EG')" src="l-snak.jpg" alt="">
+<img onclick="speak( 'سلحفاة','ar ')" src="l-solhafa.jpg" alt="">
+<img onclick="speak( 'تمساح','ar ')" src="l-tmsah.jpg" alt="">
+<img onclick="speak( 'ثعلب','ar ')" src="l-thalb.jpg" alt="">
+<img onclick="speak( 'ذئب','ar ')" src="l-woar.jpg" alt="">
+</div>
+</section>
+<a href="index.html" class="home"><button>home</button></a>
+
+<script>
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.5;
+utterance.pitch = 1.8;
+utterance.variant="f2";
+window.speechSynthesis.speak(utterance);
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colers</title>
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+background: linear-gradient(#bba0d1);}
+
+.coler {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin:  20px auto;
+}
+.coler button {
+min-height: 50px;
+width: 70px;
+color: black;
+background-color: wheat;
+border-radius: 20%;
+margin: 20px auto;
+transition:all 0.4s ease;
+
+}
+.white:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px white;
+  background-color: white;
+  color: black;
+     z-index: 10;} 
+.black:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px black;
+  background-color: black;
+  color: white;
+     z-index: 10;} 
+.blue:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px blue;
+  background-color: blue;
+  color: white;
+     z-index: 10;} 
+.pink:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px pink;
+  background-color: pink;
+  color: black;
+     z-index: 10;} 
+.yellow:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px yellow;
+  background-color: yellow;
+  color: black;
+     z-index: 10;} 
+.brown:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px brown;
+  background-color: brown;
+  color: white;
+     z-index: 10;} 
+.grey:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px gray;
+  background-color: gray;
+  color: black;
+     z-index: 10;} 
+.red:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px red;
+  background-color: red;
+  color: white;
+     z-index: 10;} 
+.green:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px green;
+  background-color: green;
+  color: white;
+     z-index: 10;} 
+.orange:hover{
+   transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 10px 10px orangered;
+  background-color: orangered;
+  color: white;
+     z-index: 10;} 
+    .home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;}
+
+.home button {
+height: 50px;
+width: 100px;
+background-color: #861adf;
+color: white;
+border-radius: 20%;
+margin: auto;}
+h2{
+ font-size: larger;
+color: white;
+background-color:#861adf;
+border: 3px solid burlywood;
+border-radius: 20%;
+min-width: 200px;
+text-align: center;
+margin: auto;}
+</style>
+
+</head>
+<body>
+
+    <h2>  تعلم الالوان</h2>
+
+<section class="coler">
+<button onclick="speak('لون ابيض','ar-EG')" class="white"> white </button>
+<button onclick="speak('لون اسود','ar-EG')" class="black"> black </button>
+<button onclick="speak('لون ازرق','ar-EG')" class="blue"> blue </button>
+<button onclick="speak('لون بامبي','ar-EG')"class="pink"> pink </button>
+<button onclick="speak('لون اصفر','ar-EG')" class="yellow"> yellow </button>
+<button onclick="speak('لون بني','ar-EG')"class="brown"> brown </button>
+<button onclick="speak('لون رمادي','ar-EG')"class="grey"> grey </button>
+<button onclick="speak('لون احمر','ar-EG')" class="red"> red </button>
+<button onclick="speak('لون اخضر','ar-EG')"class="green"> green </button>
+<button onclick="speak('لون برتقالي','ar-EG')" class="orange"> orange </button>
+</section>
+<a href="index.html" class="home"><button>home</button></a>
+
+<script>
+
+function speak( text,lang)
+{window.speechSynthesis.cancel();
+  let utterance =new SpeechSynthesisUtterance(text);
+utterance.lang='ar-EG',
+utterance.rate=0.9;
+utterance.pitch=1.8;
+window.speechSynthesis.speak(utterance);
+};
+</script>
+
+</body>
+</html>
