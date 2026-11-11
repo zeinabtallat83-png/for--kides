@@ -21,15 +21,15 @@ margin: auto;}
 
 .num {
  display: flex;
- flex-direction: row;
+ flex-direction: column;
 flex-wrap: wrap; 
 margin:20px auto;
 justify-content: center; }
 
 * .numb1 img ,.numb2 img ,.numb3 img ,.numb4 img ,.numb5 img ,.numb6 img,.numb7 img ,.numb8 img ,.numb9 img,.numb10 img 
  {
-    min-height: 150px;
-    width: 150px;
+    min-height: 350px;
+    width: 250px;
     margin: 10px auto;
     border: 2px solid orangered;
     border-radius: 20%;
@@ -89,7 +89,7 @@ function speak( text,lang)
 {window.speechSynthesis.cancel();
   let utterance =new SpeechSynthesisUtterance(text);
 utterance.lang='ar-EG',
-utterance.rate=0.9;
+utterance.rate=0.8;
 utterance.pitch=1.8;
 window.speechSynthesis.speak(utterance);
 };
