@@ -89,7 +89,7 @@ margin: auto;}
 <img onclick="speak( 'وحيد القرن','ar ')" src="l-karn.jpg" alt="">
 <img onclick="speak( 'خنزير','ar ')" src="l-kha.jpg" alt="">
 <img onclick="speak( 'كنغر ',' ar')" src="l-kongr.jpg" alt="">
-<img onclick="speak( 'اسد','ar ')" src="l-lion.jpg" alt="">
+<img onclick="speak( 'أسد','ar ')" src="l-lion.jpg" alt="">
 
 </div>
 <div>
@@ -110,8 +110,8 @@ function speak( text,lang)
 {window.speechSynthesis.cancel();
   let utterance =new SpeechSynthesisUtterance(text);
 utterance.lang='ar-EG',
-utterance.rate=0.5;
-utterance.pitch = 1.8;
+utterance.rate=0.9;
+utterance.pitch = 1.2;
 utterance.variant="f2";
 window.speechSynthesis.speak(utterance);
 };
