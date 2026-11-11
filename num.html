@@ -284,8 +284,10 @@ function speak( text,lang)
   let utterance =new SpeechSynthesisUtterance(text);
   if (lang==='ar'){
 utterance.lang='ar-EG';
-utterance.rate=0.8;}
-else { utterance.lang ='en-US';
+utterance.rate=0.8;
+  }
+else
+{ utterance.lang ='en-US';
 utterance.rate=0.8;
  };
 utterance.pitch=1.2;
